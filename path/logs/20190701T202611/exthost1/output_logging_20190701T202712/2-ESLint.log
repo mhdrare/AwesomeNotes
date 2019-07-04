@@ -1,0 +1,236 @@
+[Info  - 8:27:12 PM] ESLint server stopped.
+[Info  - 8:27:14 PM] ESLint server running in node v10.2.0
+[Info  - 8:27:14 PM] ESLint server is running.
+[Info  - 8:27:28 PM] 
+Failed to load the ESLint library for the document /important/Arkademy/Week#02/AwesomeNotes/App.js
+
+To use ESLint please install eslint by running npm install eslint in the workspace folder AwesomeNotes
+or globally using 'npm install -g eslint'. You need to reopen the workspace after installing eslint.
+
+If you are using yarn or pnpm instead of npm set the setting `eslint.packageManager` to either `yarn` or `pnpm`
+Alternatively you can disable ESLint for the workspace folder AwesomeNotes by executing the 'Disable ESLint' command.
+[Info  - 8:43:22 PM] 
+Failed to load the ESLint library for the document /important/Arkademy/Week#02/AwesomeNotes/package.json
+
+To use ESLint please install eslint by running npm install eslint in the workspace folder AwesomeNotes
+or globally using 'npm install -g eslint'. You need to reopen the workspace after installing eslint.
+
+If you are using yarn or pnpm instead of npm set the setting `eslint.packageManager` to either `yarn` or `pnpm`
+Alternatively you can disable ESLint for the workspace folder AwesomeNotes by executing the 'Disable ESLint' command.
+[Info  - 8:45:25 PM] 
+Failed to load the ESLint library for the document /important/Arkademy/Week#02/AwesomeNotes/src/screens/Home.js
+
+To use ESLint please install eslint by running npm install eslint in the workspace folder AwesomeNotes
+or globally using 'npm install -g eslint'. You need to reopen the workspace after installing eslint.
+
+If you are using yarn or pnpm instead of npm set the setting `eslint.packageManager` to either `yarn` or `pnpm`
+Alternatively you can disable ESLint for the workspace folder AwesomeNotes by executing the 'Disable ESLint' command.
+[Info  - 8:48:32 PM] 
+Failed to load the ESLint library for the document /important/Arkademy/Week#02/AwesomeNotes/package.json
+
+To use ESLint please install eslint by running npm install eslint in the workspace folder AwesomeNotes
+or globally using 'npm install -g eslint'. You need to reopen the workspace after installing eslint.
+
+If you are using yarn or pnpm instead of npm set the setting `eslint.packageManager` to either `yarn` or `pnpm`
+Alternatively you can disable ESLint for the workspace folder AwesomeNotes by executing the 'Disable ESLint' command.
+[Info  - 8:56:48 PM] 
+Failed to load the ESLint library for the document /important/Arkademy/Week#02/AwesomeNotes/App.js
+
+To use ESLint please install eslint by running npm install eslint in the workspace folder AwesomeNotes
+or globally using 'npm install -g eslint'. You need to reopen the workspace after installing eslint.
+
+If you are using yarn or pnpm instead of npm set the setting `eslint.packageManager` to either `yarn` or `pnpm`
+Alternatively you can disable ESLint for the workspace folder AwesomeNotes by executing the 'Disable ESLint' command.
+[Info  - 8:59:20 PM] 
+Failed to load the ESLint library for the document /important/Arkademy/Week#02/AwesomeNotes/src/screens/Home.js
+
+To use ESLint please install eslint by running npm install eslint in the workspace folder AwesomeNotes
+or globally using 'npm install -g eslint'. You need to reopen the workspace after installing eslint.
+
+If you are using yarn or pnpm instead of npm set the setting `eslint.packageManager` to either `yarn` or `pnpm`
+Alternatively you can disable ESLint for the workspace folder AwesomeNotes by executing the 'Disable ESLint' command.
+[Info  - 8:59:50 PM] 
+Failed to load the ESLint library for the document /important/Arkademy/Week#02/AwesomeNotes/src/screens/SingleNotes.js
+
+To use ESLint please install eslint by running npm install eslint in the workspace folder AwesomeNotes
+or globally using 'npm install -g eslint'. You need to reopen the workspace after installing eslint.
+
+If you are using yarn or pnpm instead of npm set the setting `eslint.packageManager` to either `yarn` or `pnpm`
+Alternatively you can disable ESLint for the workspace folder AwesomeNotes by executing the 'Disable ESLint' command.
+[Info  - 9:12:05 PM] 
+Failed to load the ESLint library for the document /important/Arkademy/Week#02/AwesomeNotes/src/components/DrawerNavigator.js
+
+To use ESLint please install eslint by running npm install eslint in the workspace folder AwesomeNotes
+or globally using 'npm install -g eslint'. You need to reopen the workspace after installing eslint.
+
+If you are using yarn or pnpm instead of npm set the setting `eslint.packageManager` to either `yarn` or `pnpm`
+Alternatively you can disable ESLint for the workspace folder AwesomeNotes by executing the 'Disable ESLint' command.
+[Info  - 9:13:21 PM] 
+Failed to load the ESLint library for the document /important/Arkademy/Week#02/AwesomeNotes/src/components/ModalAddCategory.js
+
+To use ESLint please install eslint by running npm install eslint in the workspace folder AwesomeNotes
+or globally using 'npm install -g eslint'. You need to reopen the workspace after installing eslint.
+
+If you are using yarn or pnpm instead of npm set the setting `eslint.packageManager` to either `yarn` or `pnpm`
+Alternatively you can disable ESLint for the workspace folder AwesomeNotes by executing the 'Disable ESLint' command.
+[Info  - 9:13:21 PM] 
+Failed to load the ESLint library for the document /important/Arkademy/Week#02/AwesomeNotes/src/components/Categories.js
+
+To use ESLint please install eslint by running npm install eslint in the workspace folder AwesomeNotes
+or globally using 'npm install -g eslint'. You need to reopen the workspace after installing eslint.
+
+If you are using yarn or pnpm instead of npm set the setting `eslint.packageManager` to either `yarn` or `pnpm`
+Alternatively you can disable ESLint for the workspace folder AwesomeNotes by executing the 'Disable ESLint' command.
+[Info  - 9:13:23 PM] 
+Failed to load the ESLint library for the document /important/Arkademy/Week#02/AwesomeNotes/src/components/DrawerNavigator.js
+
+To use ESLint please install eslint by running npm install eslint in the workspace folder AwesomeNotes
+or globally using 'npm install -g eslint'. You need to reopen the workspace after installing eslint.
+
+If you are using yarn or pnpm instead of npm set the setting `eslint.packageManager` to either `yarn` or `pnpm`
+Alternatively you can disable ESLint for the workspace folder AwesomeNotes by executing the 'Disable ESLint' command.
+[Info  - 9:36:27 PM] 
+Failed to load the ESLint library for the document /important/Arkademy/Week#02/AwesomeNotes/src/screens/SingleNotes.js
+
+To use ESLint please install eslint by running npm install eslint in the workspace folder AwesomeNotes
+or globally using 'npm install -g eslint'. You need to reopen the workspace after installing eslint.
+
+If you are using yarn or pnpm instead of npm set the setting `eslint.packageManager` to either `yarn` or `pnpm`
+Alternatively you can disable ESLint for the workspace folder AwesomeNotes by executing the 'Disable ESLint' command.
+[Info  - 9:40:00 PM] 
+Failed to load the ESLint library for the document /important/Arkademy/Week#02/AwesomeNotes/src/screens/AddNotes.js
+
+To use ESLint please install eslint by running npm install eslint in the workspace folder AwesomeNotes
+or globally using 'npm install -g eslint'. You need to reopen the workspace after installing eslint.
+
+If you are using yarn or pnpm instead of npm set the setting `eslint.packageManager` to either `yarn` or `pnpm`
+Alternatively you can disable ESLint for the workspace folder AwesomeNotes by executing the 'Disable ESLint' command.
+[Info  - 9:42:27 PM] 
+Failed to load the ESLint library for the document /important/Arkademy/Week#02/AwesomeNotes/src/screens/AddCategory.js
+
+To use ESLint please install eslint by running npm install eslint in the workspace folder AwesomeNotes
+or globally using 'npm install -g eslint'. You need to reopen the workspace after installing eslint.
+
+If you are using yarn or pnpm instead of npm set the setting `eslint.packageManager` to either `yarn` or `pnpm`
+Alternatively you can disable ESLint for the workspace folder AwesomeNotes by executing the 'Disable ESLint' command.
+[Info  - 9:53:43 PM] 
+Failed to load the ESLint library for the document /important/Arkademy/Week#02/AwesomeNotes/src/components/ModalAddCategory.js
+
+To use ESLint please install eslint by running npm install eslint in the workspace folder AwesomeNotes
+or globally using 'npm install -g eslint'. You need to reopen the workspace after installing eslint.
+
+If you are using yarn or pnpm instead of npm set the setting `eslint.packageManager` to either `yarn` or `pnpm`
+Alternatively you can disable ESLint for the workspace folder AwesomeNotes by executing the 'Disable ESLint' command.
+[Info  - 10:18:51 PM] 
+Failed to load the ESLint library for the document /important/Arkademy/Week#02/AwesomeNotes/src/components/dummy/Categories.js
+
+To use ESLint please install eslint by running npm install eslint in the workspace folder AwesomeNotes
+or globally using 'npm install -g eslint'. You need to reopen the workspace after installing eslint.
+
+If you are using yarn or pnpm instead of npm set the setting `eslint.packageManager` to either `yarn` or `pnpm`
+Alternatively you can disable ESLint for the workspace folder AwesomeNotes by executing the 'Disable ESLint' command.
+[Info  - 11:05:23 PM] 
+Failed to load the ESLint library for the document /important/Arkademy/Week#02/AwesomeNotes/src/components/header/Home.js
+
+To use ESLint please install eslint by running npm install eslint in the workspace folder AwesomeNotes
+or globally using 'npm install -g eslint'. You need to reopen the workspace after installing eslint.
+
+If you are using yarn or pnpm instead of npm set the setting `eslint.packageManager` to either `yarn` or `pnpm`
+Alternatively you can disable ESLint for the workspace folder AwesomeNotes by executing the 'Disable ESLint' command.
+[Info  - 11:46:52 PM] 
+Failed to load the ESLint library for the document /important/Arkademy/Week#02/AwesomeNotes/src/components/dummy/Notes.js
+
+To use ESLint please install eslint by running npm install eslint in the workspace folder AwesomeNotes
+or globally using 'npm install -g eslint'. You need to reopen the workspace after installing eslint.
+
+If you are using yarn or pnpm instead of npm set the setting `eslint.packageManager` to either `yarn` or `pnpm`
+Alternatively you can disable ESLint for the workspace folder AwesomeNotes by executing the 'Disable ESLint' command.
+[Info  - 11:48:39 PM] 
+Failed to load the ESLint library for the document /important/Arkademy/Week#02/AwesomeNotes/src/components/Notes.js
+
+To use ESLint please install eslint by running npm install eslint in the workspace folder AwesomeNotes
+or globally using 'npm install -g eslint'. You need to reopen the workspace after installing eslint.
+
+If you are using yarn or pnpm instead of npm set the setting `eslint.packageManager` to either `yarn` or `pnpm`
+Alternatively you can disable ESLint for the workspace folder AwesomeNotes by executing the 'Disable ESLint' command.
+[Info  - 12:06:43 AM] 
+Failed to load the ESLint library for the document /important/Arkademy/Week#02/AwesomeNotes/src/components/dummy/Categories.js
+
+To use ESLint please install eslint by running npm install eslint in the workspace folder AwesomeNotes
+or globally using 'npm install -g eslint'. You need to reopen the workspace after installing eslint.
+
+If you are using yarn or pnpm instead of npm set the setting `eslint.packageManager` to either `yarn` or `pnpm`
+Alternatively you can disable ESLint for the workspace folder AwesomeNotes by executing the 'Disable ESLint' command.
+[Info  - 12:06:44 AM] 
+Failed to load the ESLint library for the document /important/Arkademy/Week#02/AwesomeNotes/src/components/dummy/Notes.js
+
+To use ESLint please install eslint by running npm install eslint in the workspace folder AwesomeNotes
+or globally using 'npm install -g eslint'. You need to reopen the workspace after installing eslint.
+
+If you are using yarn or pnpm instead of npm set the setting `eslint.packageManager` to either `yarn` or `pnpm`
+Alternatively you can disable ESLint for the workspace folder AwesomeNotes by executing the 'Disable ESLint' command.
+[Info  - 12:13:26 AM] 
+Failed to load the ESLint library for the document /important/Arkademy/Week#02/AwesomeNotes/src/screens/SingleNotes.js
+
+To use ESLint please install eslint by running npm install eslint in the workspace folder AwesomeNotes
+or globally using 'npm install -g eslint'. You need to reopen the workspace after installing eslint.
+
+If you are using yarn or pnpm instead of npm set the setting `eslint.packageManager` to either `yarn` or `pnpm`
+Alternatively you can disable ESLint for the workspace folder AwesomeNotes by executing the 'Disable ESLint' command.
+[Info  - 12:13:26 AM] 
+Failed to load the ESLint library for the document /important/Arkademy/Week#02/AwesomeNotes/src/screens/AddNotes.js
+
+To use ESLint please install eslint by running npm install eslint in the workspace folder AwesomeNotes
+or globally using 'npm install -g eslint'. You need to reopen the workspace after installing eslint.
+
+If you are using yarn or pnpm instead of npm set the setting `eslint.packageManager` to either `yarn` or `pnpm`
+Alternatively you can disable ESLint for the workspace folder AwesomeNotes by executing the 'Disable ESLint' command.
+[Info  - 12:15:43 AM] 
+Failed to load the ESLint library for the document /important/Arkademy/Week#02/AwesomeNotes/src/components/dummy/Notes.js
+
+To use ESLint please install eslint by running npm install eslint in the workspace folder AwesomeNotes
+or globally using 'npm install -g eslint'. You need to reopen the workspace after installing eslint.
+
+If you are using yarn or pnpm instead of npm set the setting `eslint.packageManager` to either `yarn` or `pnpm`
+Alternatively you can disable ESLint for the workspace folder AwesomeNotes by executing the 'Disable ESLint' command.
+[Info  - 12:21:17 AM] 
+Failed to load the ESLint library for the document /important/Arkademy/Week#02/AwesomeNotes/src/components/dummy/Notes.js
+
+To use ESLint please install eslint by running npm install eslint in the workspace folder AwesomeNotes
+or globally using 'npm install -g eslint'. You need to reopen the workspace after installing eslint.
+
+If you are using yarn or pnpm instead of npm set the setting `eslint.packageManager` to either `yarn` or `pnpm`
+Alternatively you can disable ESLint for the workspace folder AwesomeNotes by executing the 'Disable ESLint' command.
+[Info  - 12:29:55 AM] 
+Failed to load the ESLint library for the document /important/Arkademy/Week#02/AwesomeNotes/src/screens/AddNotes.js
+
+To use ESLint please install eslint by running npm install eslint in the workspace folder AwesomeNotes
+or globally using 'npm install -g eslint'. You need to reopen the workspace after installing eslint.
+
+If you are using yarn or pnpm instead of npm set the setting `eslint.packageManager` to either `yarn` or `pnpm`
+Alternatively you can disable ESLint for the workspace folder AwesomeNotes by executing the 'Disable ESLint' command.
+[Info  - 12:34:09 AM] 
+Failed to load the ESLint library for the document /important/Arkademy/Week#02/AwesomeNotes/src/screens/Home.js
+
+To use ESLint please install eslint by running npm install eslint in the workspace folder AwesomeNotes
+or globally using 'npm install -g eslint'. You need to reopen the workspace after installing eslint.
+
+If you are using yarn or pnpm instead of npm set the setting `eslint.packageManager` to either `yarn` or `pnpm`
+Alternatively you can disable ESLint for the workspace folder AwesomeNotes by executing the 'Disable ESLint' command.
+[Info  - 12:37:54 AM] 
+Failed to load the ESLint library for the document /important/Arkademy/Week#02/AwesomeNotes/src/screens/Home.js
+
+To use ESLint please install eslint by running npm install eslint in the workspace folder AwesomeNotes
+or globally using 'npm install -g eslint'. You need to reopen the workspace after installing eslint.
+
+If you are using yarn or pnpm instead of npm set the setting `eslint.packageManager` to either `yarn` or `pnpm`
+Alternatively you can disable ESLint for the workspace folder AwesomeNotes by executing the 'Disable ESLint' command.
+[Info  - 12:38:50 AM] 
+Failed to load the ESLint library for the document /important/Arkademy/Week#02/AwesomeNotes/src/components/ModalSorting.js
+
+To use ESLint please install eslint by running npm install eslint in the workspace folder AwesomeNotes
+or globally using 'npm install -g eslint'. You need to reopen the workspace after installing eslint.
+
+If you are using yarn or pnpm instead of npm set the setting `eslint.packageManager` to either `yarn` or `pnpm`
+Alternatively you can disable ESLint for the workspace folder AwesomeNotes by executing the 'Disable ESLint' command.
+[Info  - 2:54:16 AM] ESLint server stopped.

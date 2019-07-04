@@ -1,0 +1,86 @@
+[2019-07-01 18:28:43.348] [exthost] [info] extension host started
+[2019-07-01 18:28:44.665] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"activationEvent":"*"}
+[2019-07-01 18:28:44.665] [exthost] [info] ExtensionService#loadCommonJSModule /snap/code/9/usr/share/code/resources/app/extensions/debug-auto-launch/dist/extension
+[2019-07-01 18:28:44.724] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"activationEvent":"*"}
+[2019-07-01 18:28:44.724] [exthost] [info] ExtensionService#loadCommonJSModule /snap/code/9/usr/share/code/resources/app/extensions/emmet/dist/extension
+[2019-07-01 18:28:44.833] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"activationEvent":"*"}
+[2019-07-01 18:28:44.833] [exthost] [info] ExtensionService#loadCommonJSModule /snap/code/9/usr/share/code/resources/app/extensions/git/dist/main
+[2019-07-01 18:28:45.284] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2019-07-01 18:28:45.284] [exthost] [info] ExtensionService#loadCommonJSModule /snap/code/9/usr/share/code/resources/app/extensions/merge-conflict/dist/extension
+[2019-07-01 18:28:45.310] [exthost] [info] ExtensionService#_doActivateExtension dbaeumer.vscode-eslint {"startup":true,"activationEvent":"*"}
+[2019-07-01 18:28:45.310] [exthost] [info] ExtensionService#loadCommonJSModule /home/mhdrare/.vscode/extensions/dbaeumer.vscode-eslint-1.9.0/client/out/extension
+[2019-07-01 18:28:45.556] [exthost] [info] ExtensionService#_doActivateExtension HookyQR.beautify {"startup":true,"activationEvent":"*"}
+[2019-07-01 18:28:45.556] [exthost] [info] ExtensionService#loadCommonJSModule /home/mhdrare/.vscode/extensions/hookyqr.beautify-1.5.0/extension
+[2019-07-01 18:28:46.955] [exthost] [info] ExtensionService#_doActivateExtension PKief.material-icon-theme {"startup":true,"activationEvent":"*"}
+[2019-07-01 18:28:46.955] [exthost] [info] ExtensionService#loadCommonJSModule /home/mhdrare/.vscode/extensions/pkief.material-icon-theme-3.8.0/dist/extension
+[2019-07-01 18:28:48.537] [exthost] [info] eager extensions activated
+[2019-07-01 18:28:52.961] [exthost] [info] ExtensionService#_doActivateExtension vscode.configuration-editing {"startup":false,"activationEvent":"onLanguage:jsonc"}
+[2019-07-01 18:28:52.961] [exthost] [info] ExtensionService#loadCommonJSModule /snap/code/9/usr/share/code/resources/app/extensions/configuration-editing/dist/extension
+[2019-07-01 18:28:53.088] [exthost] [info] ExtensionService#_doActivateExtension vscode.json-language-features {"startup":false,"activationEvent":"onLanguage:jsonc"}
+[2019-07-01 18:28:53.088] [exthost] [info] ExtensionService#loadCommonJSModule /snap/code/9/usr/share/code/resources/app/extensions/json-language-features/client/dist/jsonMain
+[2019-07-01 18:28:53.374] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features {"startup":false,"activationEvent":"onLanguage:jsonc"}
+[2019-07-01 18:28:53.374] [exthost] [info] ExtensionService#loadCommonJSModule /snap/code/9/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension
+[2019-07-01 18:29:04.485] [exthost] [info] ExtensionService#_doActivateExtension mgmcdermott.vscode-language-babel {"startup":false,"activationEvent":"onLanguage:javascript"}
+[2019-07-01 18:29:04.485] [exthost] [info] ExtensionService#loadCommonJSModule /home/mhdrare/.vscode/extensions/mgmcdermott.vscode-language-babel-0.0.22/dist/extension
+[2019-07-01 18:29:04.502] [exthost] [info] ExtensionService#_doActivateExtension VisualStudioExptTeam.vscodeintellicode {"startup":false,"activationEvent":"onLanguage:javascript"}
+[2019-07-01 18:29:04.502] [exthost] [info] ExtensionService#loadCommonJSModule /home/mhdrare/.vscode/extensions/visualstudioexptteam.vscodeintellicode-1.1.7/dist/intellicode
+[2019-07-01 18:33:06.872] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2019-07-01 18:33:06.875] [exthost] [error] Error: TypeScript Server Error (3.5.1)
+Debug Failure. False expression: This failure could trigger https://github.com/Microsoft/TypeScript/issues/20809
+Error: Debug Failure. False expression: This failure could trigger https://github.com/Microsoft/TypeScript/issues/20809
+    at getErrorSpanForNode (tsserver.js:9383:22)
+    at createDiagnosticForNodeInSourceFile (tsserver.js:9296:20)
+    at Object.createDiagnosticForNode (tsserver.js:9287:16)
+    at checkNode (tsserver.js:118152:36)
+    at getRangeToExtract (tsserver.js:118071:53)
+    at Object.getAvailableActions (tsserver.js:117879:38)
+    at tsserver.js:112870:128
+    at getIterator (tsserver.js:627:23)
+    at Object.next (tsserver.js:622:35)
+    at Object.arrayFrom (tsserver.js:1255:32)
+    at Object.getApplicableRefactors (tsserver.js:112869:23)
+    at Object.getApplicableRefactors (tsserver.js:122632:32)
+    at IOSession.Session.getApplicableRefactors (tsserver.js:131393:53)
+    at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (tsserver.js:130211:61)
+    at tsserver.js:131637:88
+    at IOSession.Session.executeWithRequestId (tsserver.js:131628:28)
+    at IOSession.Session.executeCommand (tsserver.js:131637:33)
+    at IOSession.Session.onMessage (tsserver.js:131659:35)
+    at Interface.<anonymous> (tsserver.js:132950:27)
+    at Interface.emit (events.js:182:13)
+    at Interface._onLine (readline.js:290:10)
+    at Interface._normalWrite (readline.js:433:12)
+    at Socket.ondata (readline.js:149:10)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:279:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    at Socket.Readable.push (_stream_readable.js:219:10)
+    at Pipe.onread (net.js:636:20)
+	at Function.create (/snap/code/9/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:197728)
+	at v.dispatchResponse (/snap/code/9/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:203096)
+	at v.dispatchMessage (/snap/code/9/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:201848)
+	at constructor._reader.onData.e (/snap/code/9/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:201204)
+	at u.fire (/snap/code/9/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:47:720)
+	at t.Reader.onLengthData (/snap/code/9/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:206508)
+	at Socket.t.Reader.constructor.e.on.e (/snap/code/9/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:206156)
+	at Socket.emit (events.js:182:13)
+	at addChunk (_stream_readable.js:279:12)
+	at readableAddChunk (_stream_readable.js:264:11)
+	at Socket.Readable.push (_stream_readable.js:219:10)
+	at Pipe.onread (net.js:636:20)
+[2019-07-01 18:34:37.057] [exthost] [info] ExtensionService#_doActivateExtension vscode.extension-editing {"startup":false,"activationEvent":"onLanguage:json"}
+[2019-07-01 18:34:37.057] [exthost] [info] ExtensionService#loadCommonJSModule /snap/code/9/usr/share/code/resources/app/extensions/extension-editing/dist/extension
+[2019-07-01 18:34:37.277] [exthost] [info] ExtensionService#_doActivateExtension vscode.npm {"startup":false,"activationEvent":"onLanguage:json"}
+[2019-07-01 18:34:37.277] [exthost] [info] ExtensionService#loadCommonJSModule /snap/code/9/usr/share/code/resources/app/extensions/npm/dist/main
+[2019-07-01 20:14:09.864] [exthost] [info] ExtensionService#_doActivateExtension redhat.java {"startup":false,"activationEvent":"onLanguage:java"}
+[2019-07-01 20:14:09.864] [exthost] [info] ExtensionService#loadCommonJSModule /home/mhdrare/.vscode/extensions/redhat.java-0.46.0/dist/extension
+[2019-07-01 20:14:12.630] [exthost] [info] ExtensionService#_doActivateExtension vscjava.vscode-java-pack {"startup":false,"activationEvent":"onLanguage:java"}
+[2019-07-01 20:14:12.630] [exthost] [info] ExtensionService#loadCommonJSModule /home/mhdrare/.vscode/extensions/vscjava.vscode-java-pack-0.7.1/out/extension
+[2019-07-01 20:14:17.646] [exthost] [info] ExtensionService#_doActivateExtension vscode.markdown-language-features {"startup":false,"activationEvent":"onCommand:markdown.showPreview"}
+[2019-07-01 20:14:17.646] [exthost] [info] ExtensionService#loadCommonJSModule /snap/code/9/usr/share/code/resources/app/extensions/markdown-language-features/dist/extension
+[2019-07-01 20:16:47.821] [exthost] [info] ExtensionService#_doActivateExtension vscjava.vscode-java-debug {"startup":false,"activationEvent":"onLanguage:java"}
+[2019-07-01 20:16:47.829] [exthost] [info] ExtensionService#loadCommonJSModule /home/mhdrare/.vscode/extensions/vscjava.vscode-java-debug-0.19.0/dist/extension
+[2019-07-01 20:16:48.703] [exthost] [info] ExtensionService#_doActivateExtension vscjava.vscode-java-dependency {"startup":false,"activationEvent":"onLanguage:java"}
+[2019-07-01 20:16:48.703] [exthost] [info] ExtensionService#loadCommonJSModule /home/mhdrare/.vscode/extensions/vscjava.vscode-java-dependency-0.5.1/dist/extension
+[2019-07-01 20:16:51.112] [exthost] [info] ExtensionService#_doActivateExtension vscjava.vscode-java-test {"startup":false,"activationEvent":"onLanguage:java"}
+[2019-07-01 20:16:51.113] [exthost] [info] ExtensionService#loadCommonJSModule /home/mhdrare/.vscode/extensions/vscjava.vscode-java-test-0.18.1/dist/extension
