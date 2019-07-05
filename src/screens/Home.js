@@ -3,7 +3,7 @@ import { View, TextInput, StyleSheet, TouchableOpacity, Image, Text, ScrollView,
 import Notes from '../components/Notes';
 import Header from '../components/header/Home'
 import { connect } from 'react-redux'
-import { searchNotesByTitle } from '../publics/redux/actions/notes'
+import { getNotes } from '../publics/redux/actions/notes'
 
 class HeaderRight extends Component {
     constructor(props) {
@@ -42,7 +42,6 @@ class App extends Component {
         this.state = {
             isModalVisible: false,
             search: '',
-            sort: 'DESC'
         };
     }
 
@@ -61,24 +60,11 @@ class App extends Component {
         }
     }
 
-    fetchData = (state) => {
-        this.props.dispatch(searchNotesByTitle(this.state.search))
-    }
-
-    searchNotes = (data) => {
-        this.setState({
-            search: data
-        })
-    }
-
     render() {
         return (
           <React.Fragment>
             <Header navigation={this.props.navigation} modal={this.state} sort={this.sort} />
             <View style={styles.container}>
-                <View style={styles.searchBox}>
-                    <TextInput placeholder="Search..." style={styles.search} onChangeText={this.searchNotes}/>
-                </View>
                 <ScrollView>
                     <Notes navigation={this.props.navigation} item={this.props.notes} />
                 </ScrollView>
@@ -102,19 +88,7 @@ export default connect(mapStateToProps)(App)
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#F5FCFF',
-    },
-    search: { 
-        backgroundColor: '#FFFFFF', 
-        paddingLeft: 20, 
-        borderRadius: 50, 
-        elevation: 2, 
-        height: 40 
-    },
-    searchBox: {
-        width: '85%', 
-        alignSelf: 'center', 
-        margin: 20,
+        backgroundColor: '#FFFFFF',
     },
     fab: {
         position: 'absolute', 

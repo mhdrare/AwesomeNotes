@@ -10,6 +10,7 @@ export default notes = (state = initialState, action) => {
         // GET NOTES
         case 'GET_NOTES_PENDING':
             return {
+                ...state,
                 isLoading: true,
                 isError: false
             }
@@ -21,6 +22,7 @@ export default notes = (state = initialState, action) => {
             }
         case 'GET_NOTES_REJECTED':
             return {
+                ...state,
                 isLoading: false,
                 isError: true
             }
@@ -28,6 +30,7 @@ export default notes = (state = initialState, action) => {
         // POST NOTES
         case 'POST_NOTES_PENDING':
             return {
+                ...state,
                 isLoading: true,
                 isError: false
             }
@@ -35,10 +38,11 @@ export default notes = (state = initialState, action) => {
             return {
                 ...state,
                 isLoading: false,
-                data: [...state.data, action.payload.data.data[0]]
+                data: [ action.payload.data.values[0], ...state.data]
             }
         case 'POST_NOTES_REJECTED':
             return {
+                ...state,
                 isLoading: false,
                 isError: true
             }
@@ -68,6 +72,7 @@ export default notes = (state = initialState, action) => {
         // DELETE NOTES
         case 'DELETE_NOTES_PENDING':
             return {
+                ...state,
                 isLoading: true,
                 isError: false
             }
@@ -75,9 +80,11 @@ export default notes = (state = initialState, action) => {
             return {
                 ...state,
                 isLoading: false,
+                data: state.data.filter(data => data.id != action.payload.data.values.id )
             }
         case 'DELETE_NOTES_REJECTED':
             return {
+                ...state,
                 isLoading: false,
                 isError: true
             }

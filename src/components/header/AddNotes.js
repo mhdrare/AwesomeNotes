@@ -6,7 +6,7 @@ import { getNotes, postNotes } from '../../publics/redux/actions/notes'
 class App extends Component {
     createNotes = (data) => {
         this.props.dispatch(postNotes(data))
-        setTimeout(() => {this.props.dispatch(getNotes())}, 500)
+        // setTimeout(() => {this.props.dispatch(getNotes())}, 500)
     }
     render() {
     return (

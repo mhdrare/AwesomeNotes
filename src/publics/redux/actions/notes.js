@@ -9,13 +9,6 @@ export const getNotes = (search = '', sort = 'DESC') => {
     }
 }
 
-export const getNotesById = (id) => {
-    return {
-        type: 'GET_NOTES_BY_ID',
-        payload: axios.get(`${api}/${id}`)
-    }
-}
-
 export const postNotes = (data) => {
     return {
         type: 'POST_NOTES',

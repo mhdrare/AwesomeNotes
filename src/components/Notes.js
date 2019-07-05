@@ -33,7 +33,6 @@ class listNotes extends Component {
                 {
                     text: "YES", onPress: () => {
                         this.props.dispatch(deleteNotes(id))
-                        setTimeout(() => {this.props.dispatch(getNotes())}, 500)
                     }
                 }
             ],

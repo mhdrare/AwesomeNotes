@@ -15,7 +15,6 @@ class ModalAddCategory extends React.Component {
 
 	createCategory = (data) => {
 		this.props.dispatch(postCategory(data))
-		setTimeout(()=>{this.props.dispatch(getCategories())}, 500)
 	}
 
 	categoryChange = (values) => {

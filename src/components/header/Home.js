@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
-import { View, Text, StyleSheet, Image, TouchableOpacity, Modal } from 'react-native'
+import { View, Text, TextInput, StyleSheet, Image, TouchableOpacity, Modal } from 'react-native'
 import ModalSort from '../ModalSorting'
+import _ from 'lodash'
 import { connect } from 'react-redux'
 import { getNotes } from '../../publics/redux/actions/notes'
 
@@ -10,6 +11,7 @@ class listNotes extends Component {
   
         this.state = {
             isModalVisible: false,
+            search: '',
             sort: 'DESC'
         };
     }
@@ -18,11 +20,22 @@ class listNotes extends Component {
         this.setState({isModalVisible: bool})
     }
 
+    fetchData = () => {
+        this.props.dispatch(getNotes(this.state.search, this.state.sort))
+    }
+
     sortNotes = (data) => {
         this.setState({
             sort: data
         })
-        setTimeout(() => {this.props.dispatch(getNotes('',this.state.sort))}, 300)
+        setTimeout(() => {this.fetchData()}, 300)
+    }
+
+    searchNotes = (data) => {
+        this.setState({
+            search: data
+        })
+        this.fetchData()
     }
 
     render() {
@@ -59,6 +72,9 @@ class listNotes extends Component {
                     </TouchableOpacity>
                 </Modal>
             </View>
+            <View style={styles.searchBox}>
+                <TextInput placeholder="Search..." style={styles.search} onChangeText={_.debounce(this.searchNotes, 300)}/>
+            </View>
         </React.Fragment>
         );
     }
@@ -66,7 +82,7 @@ class listNotes extends Component {
 
 const mapStateToProps = (state) => {
     return {
-      notes: state.notes  
+      notes: state.notes
     }
 }
 
@@ -118,5 +134,17 @@ const styles = StyleSheet.create({
         position: 'absolute', 
         right: 10, 
         top: 40
+    },
+    searchBox: {
+        width: '85%', 
+        alignSelf: 'center', 
+        margin: 20,
+    },
+    search: { 
+        backgroundColor: '#FFFFFF', 
+        paddingLeft: 20, 
+        borderRadius: 50, 
+        elevation: 2, 
+        height: 40 
     },
 });

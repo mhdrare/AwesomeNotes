@@ -41,9 +41,8 @@ class App extends Component {
                 <TextInput placeholder="ADD DESCRIPTION . . ."  multiline={true} style={{fontSize: 15, textAlignVertical: 'top', height: 145}} value={this.state.description} onChangeText={this.descriptionChange} />
                 <Text style={styles.textTitle}>{'Category'.toUpperCase()}</Text>
                 <Picker
-                    selectedValue={this.state.categoryName}
+                    selectedValue={this.state.category}
                     onValueChange={(itemValue, itemIndex)=>this.setState({category: itemValue})}>
-                    <Picker.Item label={this.state.categoryName} value={this.state.category} key={this.state.category}/>
                     {
                         this.props.categories.data.map((item) => {
                             return (
