@@ -42,13 +42,11 @@ class listNotes extends Component {
 	}
 
 	moreData = (data) => {
-		this.setState({
-			page: this.props.notes.page.currentPage + 1,
-		})
-		// let sort = data.split('=')
-		// setTimeout(() => console.log(this.props.notes), 100)
-		setTimeout(()=>this.props.dispatch(moreNotes(this.state.page)), 300)
-		console.log(this.props.notes.config)
+		if (this.props.notes.page.currentPage < this.props.notes.page.totalPage) {
+			setTimeout(()=>this.props.dispatch(moreNotes(this.props.notes.page.currentPage=this.props.notes.page.currentPage+1)), 300)
+		} else {
+				
+		}
 	}
 
 	render() {
@@ -60,7 +58,7 @@ class listNotes extends Component {
 					<FlatList
 						data = { this.props.notes.data }
 						numColumns = {2}
-						onEndReachedThreshold= {0.01}
+						onEndReachedThreshold= {0.2}
 						onEndReached = {()=>this.moreData()}
 						keyExtractor = {(item) => item.id.toString()}
 						refreshing={this.props.notes.isLoading}
@@ -75,10 +73,15 @@ class listNotes extends Component {
 									backgroundColor: item.categoryName == 'Learn' ? '#2FC2DF' : 
 													item.categoryName == 'Wishlist' ? '#FAD06C' :
 													item.categoryName == 'Work' ? '#C0EB6A' :
-													item.categoryName == 'Personal' ? '#FF92A9' : '#000000'}}>
+													item.categoryName == 'Personal' ? '#FF92A9' :
+													item.categoryName != null ? '#5874A1' : '#000000'}}>
 								<Text style={styles.textDate}>{moment(item.time).format("D MMMM")}</Text>
 								<Text numberOfLines={1} style={styles.textTitle}>{item.title}</Text>
-								<Text numberOfLines={1} style={styles.textBottom}>{item.categoryName}</Text>
+								<Text numberOfLines={1} style={styles.textBottom}>
+									{
+										(item.categoryName == null) ? 'category is empty' : item.categoryName
+									}
+								</Text>
 								<Text numberOfLines={5} style={styles.textDescription}>{item.description}</Text>
 							</TouchableOpacity>
 							);
@@ -94,7 +97,8 @@ class listNotes extends Component {
 
 const mapStateToProps = (state) => {
 	return {
-		notes: state.notes
+		notes: state.notes,
+		categories: state.categories
 	}
 }
 

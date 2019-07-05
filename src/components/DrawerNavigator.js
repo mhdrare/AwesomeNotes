@@ -1,8 +1,9 @@
 import React from 'react'
 import ModalAddCategory from './ModalAddCategory'
-import { View, ScrollView, Text, StyleSheet, FlatList, Image, TouchableOpacity, Modal } from 'react-native'
+import { View, ScrollView, Text, StyleSheet, FlatList, Image, TouchableOpacity, Modal, Alert } from 'react-native'
 import { connect } from 'react-redux'
-import { getCategories } from '../publics/redux/actions/categories'
+import { getCategories, deleteCategory } from '../publics/redux/actions/categories'
+import { getNotes } from '../publics/redux/actions/notes'
 
 class PopupCategoryItem extends React.Component {
 	constructor(props) {
@@ -44,6 +45,26 @@ class ProfileDrawerContent extends React.Component {
 		this.props.dispatch(getCategories())
 	}
 
+	deleteData = (id) => {
+		Alert.alert(
+            "Delete Category",
+            "Are you sure want to delete category?",
+            [
+                {
+                    text: "NO", onPress: () => {
+                    }
+                },
+                {
+                    text: "YES", onPress: () => {
+                        this.props.dispatch(deleteCategory(id))
+                        setTimeout(() => this.props.dispatch(getNotes()), 100)
+                    }
+                }
+            ],
+            { cancelable: false }
+        )
+	}
+
 	render(){
 		return (
 			<React.Fragment>
@@ -64,7 +85,8 @@ class ProfileDrawerContent extends React.Component {
 							keyExtractor = {(item) => item.id.toString()}
             				onRefresh={this.getData}
 							renderItem = {({item}) => { return (
-								<TouchableOpacity style={styles.category}>
+								<TouchableOpacity style={styles.category}
+									onLongPress={()=>{this.deleteData(item.id)}}>
 									<Image style={{ width:24, height:24 }} source={{ uri: item.url_image }}/>
 									<Text numberOfLines={1} style={styles.drawer}>{ item.categoryName }</Text>
 								</TouchableOpacity>

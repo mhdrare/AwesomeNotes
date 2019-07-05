@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const api = 'http://192.168.8.100:3333/notes'
+const api = 'http://192.168.100.101:3333/notes'
 
 export const getNotes = (search = '', sort = 'DESC', page = 1) => {
     return {

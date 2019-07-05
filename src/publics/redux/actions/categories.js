@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const api = 'http://192.168.8.100:3333/categories'
+const api = 'http://192.168.100.101:3333/categories'
 
 export const getCategories = () => {
     return {
@@ -18,5 +18,12 @@ export const postCategory = (data) => {
         		url_image: data.url_image
         	}
         )
+    }
+}
+
+export const deleteCategory = (id) => {
+    return {
+        type: 'DELETE_CATEGORIES',
+        payload: axios.delete(`${api}/${id}`)
     }
 }

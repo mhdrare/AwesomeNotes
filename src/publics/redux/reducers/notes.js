@@ -38,12 +38,10 @@ export default notes = (state = initialState, action) => {
                 isError: false
             }
         case 'MORE_NOTES_FULFILLED':
-            console.log(action.payload.data.data)
             return {
                 ...state,
                 isLoading: false,
                 data: [...state.data, ...action.payload.data.data]
-                // data: action.payload.data.data,
             }
         case 'MORE_NOTES_REJECTED':
             return {
