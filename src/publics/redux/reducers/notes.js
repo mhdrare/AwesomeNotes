@@ -1,8 +1,10 @@
 const initialState = {
     data: [],
     values: [],
+    page: [],
+    all: [],
     isLoading: false,
-    isError: false
+    isError: false,
 }
 
 export default notes = (state = initialState, action) => {
@@ -18,9 +20,32 @@ export default notes = (state = initialState, action) => {
             return {
                 ...state,
                 isLoading: false,
-                data: action.payload.data.data
+                data: action.payload.data.data,
+                page: action.payload.data,
+                config: action.payload.config
             }
         case 'GET_NOTES_REJECTED':
+            return {
+                ...state,
+                isLoading: false,
+                isError: true
+            }
+        // MORE NOTES
+        case 'MORE_NOTES_PENDING':
+            return {
+                ...state,
+                isLoading: true,
+                isError: false
+            }
+        case 'MORE_NOTES_FULFILLED':
+            console.log(action.payload.data.data)
+            return {
+                ...state,
+                isLoading: false,
+                data: [...state.data, ...action.payload.data.data]
+                // data: action.payload.data.data,
+            }
+        case 'MORE_NOTES_REJECTED':
             return {
                 ...state,
                 isLoading: false,

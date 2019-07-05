@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Alert, ActivityIndicator, FlatList, Text, StyleSheet, View, TouchableOpacity } from "react-native";
 import { connect } from 'react-redux'
-import { getNotes, deleteNotes } from '../publics/redux/actions/notes'
+import { getNotes, deleteNotes, moreNotes } from '../publics/redux/actions/notes'
 import moment from 'moment'
 
 class listNotes extends Component {
@@ -9,7 +9,8 @@ class listNotes extends Component {
         super(props);
   
         this.state = {
-
+        	search: '',
+        	sort: 'DESC'
         };
     }
 
@@ -40,19 +41,27 @@ class listNotes extends Component {
         )
 	}
 
+	moreData = (data) => {
+		this.setState({
+			page: this.props.notes.page.currentPage + 1,
+		})
+		// let sort = data.split('=')
+		// setTimeout(() => console.log(this.props.notes), 100)
+		setTimeout(()=>this.props.dispatch(moreNotes(this.state.page)), 300)
+		console.log(this.props.notes.config)
+	}
+
 	render() {
 		return (
 			<View style={{alignItems: 'center', flexDirection: 'row', margin: 8}}>
 			{
-                this.props.notes.isLoading ?
-                <View style={{width: '100%'}}>
-                	<ActivityIndicator size="large" color="#000000"/>
-                </View>:
                 this.props.notes.isError ? 
                 <Text>Error, please try again!</Text> : (
 					<FlatList
 						data = { this.props.notes.data }
 						numColumns = {2}
+						onEndReachedThreshold= {0.01}
+						onEndReached = {()=>this.moreData()}
 						keyExtractor = {(item) => item.id.toString()}
 						refreshing={this.props.notes.isLoading}
 	            		onRefresh={this.getData}

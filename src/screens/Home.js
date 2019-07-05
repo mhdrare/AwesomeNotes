@@ -63,11 +63,9 @@ class App extends Component {
     render() {
         return (
           <React.Fragment>
-            <Header navigation={this.props.navigation} modal={this.state} sort={this.sort} />
+            <Header navigation={this.props.navigation}/>
             <View style={styles.container}>
-                <ScrollView>
-                    <Notes navigation={this.props.navigation} item={this.props.notes} />
-                </ScrollView>
+                <Notes navigation={this.props.navigation} item={this.props.notes} />
                 <TouchableOpacity style={styles.fab} onPress={this.handleNavigate}>
                     <Image source={require('../assets/img/+.png')} />
                 </TouchableOpacity>

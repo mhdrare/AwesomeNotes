@@ -12,7 +12,8 @@ class listNotes extends Component {
         this.state = {
             isModalVisible: false,
             search: '',
-            sort: 'DESC'
+            sort: 'DESC',
+            page: 1
         };
     }
 

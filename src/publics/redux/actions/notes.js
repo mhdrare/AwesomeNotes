@@ -1,11 +1,18 @@
 import axios from 'axios'
 
-const api = 'http://192.168.100.101:3333/notes'
+const api = 'http://192.168.8.100:3333/notes'
 
-export const getNotes = (search = '', sort = 'DESC') => {
+export const getNotes = (search = '', sort = 'DESC', page = 1) => {
     return {
         type: 'GET_NOTES',
-        payload: axios.get(`${api}?search=${search}&sort=${sort}`)
+        payload: axios.get(`${api}?search=${search}&sort=${sort}&page=${page}`)
+    }
+}
+
+export const moreNotes = (page) => {
+    return {
+        type: 'MORE_NOTES',
+        payload: axios.get(`${api}?page=${page}`)
     }
 }
 
