@@ -11,15 +11,14 @@
     <img src="https://img.shields.io/badge/react--native-0.59.9-green.svg?style=flat-square" alt="react-native version">
   </a>
   <a href="#">
-    <img src="https://img.shields.io/badge/react--native--cli-2.0.1-lightgrey.svg?style=flat-square" alt="react-native-cli version">
-  <a href="#">
     <img src="https://img.shields.io/badge/redux-4.0.1-informational.svg?style=flat-square" alt="redux version">
   </a>
   <a href="#">
     <img src="https://img.shields.io/badge/axios-0.19.0-9cf.svg?style=flat-square" alt="axios version">
+  </a>
 </div>
 
-Introduce
+Introduction
 =======
 
 Features
