@@ -1,8 +1,6 @@
 const initialState = {
     data: [],
-    values: [],
     page: [],
-    all: [],
     isLoading: false,
     isError: false,
 }
@@ -20,11 +18,32 @@ export default notes = (state = initialState, action) => {
             return {
                 ...state,
                 isLoading: false,
+                isError: false,
                 data: action.payload.data.data,
                 page: action.payload.data,
-                config: action.payload.config
             }
         case 'GET_NOTES_REJECTED':
+            return {
+                ...state,
+                isLoading: false,
+                isError: true
+            }
+        // GET NOTES BY CATEGORY
+        case 'GET_NOTES_BY_CATEGORY_PENDING':
+            return {
+                ...state,
+                isLoading: true,
+                isError: false
+            }
+        case 'GET_NOTES_BY_CATEGORY_FULFILLED':
+            return {
+                ...state,
+                isLoading: false,
+                isError: false,
+                data: action.payload.data.data,
+                page: action.payload.data,
+            }
+        case 'GET_NOTES_BY_CATEGORY_REJECTED':
             return {
                 ...state,
                 isLoading: false,
@@ -41,6 +60,8 @@ export default notes = (state = initialState, action) => {
             return {
                 ...state,
                 isLoading: false,
+                isError: false,
+                page: action.payload.data,
                 data: [...state.data, ...action.payload.data.data]
             }
         case 'MORE_NOTES_REJECTED':

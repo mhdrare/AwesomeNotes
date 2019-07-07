@@ -5,7 +5,6 @@ import { getNotes, patchNotes } from '../../publics/redux/actions/notes'
 
 class App extends Component {
     editNotes = (data) => {
-        console.log(data)
         this.props.dispatch(patchNotes(data))
         setTimeout(()=>{this.props.dispatch(getNotes())}, 500)
     }

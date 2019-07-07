@@ -5,6 +5,7 @@ import { getNotes, deleteNotes, moreNotes } from '../publics/redux/actions/notes
 import moment from 'moment'
 
 class listNotes extends Component {
+
 	constructor(props) {
         super(props);
   
@@ -43,7 +44,7 @@ class listNotes extends Component {
 
 	moreData = (data) => {
 		if (this.props.notes.page.currentPage < this.props.notes.page.totalPage) {
-			setTimeout(()=>this.props.dispatch(moreNotes(this.props.notes.page.currentPage=this.props.notes.page.currentPage+1)), 300)
+			setTimeout(()=>this.props.dispatch(moreNotes(this.props.notes.page.currentPage=this.props.notes.page.currentPage+1)), 200)
 		} else {
 				
 		}
@@ -79,7 +80,7 @@ class listNotes extends Component {
 								<Text numberOfLines={1} style={styles.textTitle}>{item.title}</Text>
 								<Text numberOfLines={1} style={styles.textBottom}>
 									{
-										(item.categoryName == null) ? 'category is empty' : item.categoryName
+										(item.categoryName == null) ? '-' : item.categoryName
 									}
 								</Text>
 								<Text numberOfLines={5} style={styles.textDescription}>{item.description}</Text>

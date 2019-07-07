@@ -22,6 +22,7 @@ class listNotes extends Component {
     }
 
     fetchData = () => {
+        console.log(this.props.notes)
         this.props.dispatch(getNotes(this.state.search, this.state.sort))
     }
 

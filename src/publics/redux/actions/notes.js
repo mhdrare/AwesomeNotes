@@ -9,7 +9,14 @@ export const getNotes = (search = '', sort = 'DESC', page = 1) => {
     }
 }
 
-export const moreNotes = (page) => {
+export const getNotesByCategory = (id = 0) => {
+    return {
+        type: 'GET_NOTES_BY_CATEGORY',
+        payload: axios.get(`${api}/category/${id}`)
+    }
+}
+
+export const moreNotes = (page, search = '', sort = 'DESC') => {
     return {
         type: 'MORE_NOTES',
         payload: axios.get(`${api}?page=${page}`)

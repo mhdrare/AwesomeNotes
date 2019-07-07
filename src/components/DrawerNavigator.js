@@ -3,7 +3,7 @@ import ModalAddCategory from './ModalAddCategory'
 import { View, ScrollView, Text, StyleSheet, FlatList, Image, TouchableOpacity, Modal, Alert } from 'react-native'
 import { connect } from 'react-redux'
 import { getCategories, deleteCategory } from '../publics/redux/actions/categories'
-import { getNotes } from '../publics/redux/actions/notes'
+import { getNotes, getNotesByCategory } from '../publics/redux/actions/notes'
 
 class PopupCategoryItem extends React.Component {
 	constructor(props) {
@@ -86,6 +86,7 @@ class ProfileDrawerContent extends React.Component {
             				onRefresh={this.getData}
 							renderItem = {({item}) => { return (
 								<TouchableOpacity style={styles.category}
+									onPress={()=>this.props.dispatch(getNotesByCategory(item.id))}
 									onLongPress={()=>{this.deleteData(item.id)}}>
 									<Image style={{ width:24, height:24 }} source={{ uri: item.url_image }}/>
 									<Text numberOfLines={1} style={styles.drawer}>{ item.categoryName }</Text>

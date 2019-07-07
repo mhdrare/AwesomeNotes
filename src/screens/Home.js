@@ -5,36 +5,6 @@ import Header from '../components/header/Home'
 import { connect } from 'react-redux'
 import { getNotes } from '../publics/redux/actions/notes'
 
-class HeaderRight extends Component {
-    constructor(props) {
-        super(props);
-  
-        this.state = {
-            isModalVisible: false,
-        };
-    }
-
-    changePopup = (bool) => {
-        this.setState({isModalVisible: bool})
-    }
-
-    render(){
-        return(
-            <React.Fragment>
-                <TouchableOpacity style={styles.itemSort} onPress={() => this.changePopup(true)}>
-                    <Image
-                        style={styles.imageSort}
-                        source={require('../assets/img/sort.png')}>
-                    </Image>
-                </TouchableOpacity>
-                <Modal transparent={true} visible={this.state.isModalVisible} onRequestClose={() => this.changePopup(false)} style={{width: 150}} animationType='fade'>
-                    <ModalSort changePopup={this.changePopup}/>
-                </Modal>
-            </React.Fragment>
-        )
-    }
-}
-
 class App extends Component {
     constructor(props) {
         super(props);
