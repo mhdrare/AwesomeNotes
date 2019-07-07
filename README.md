@@ -8,9 +8,6 @@
     <img src="https://img.shields.io/badge/node.js-10.15.2-blue.svg?style=flat-square" alt="node.js version">
   </a>
   <a href="#">
-    <img src="https://img.shields.io/badge/express.js-4.x-orange.svg?style=flat-square" alt="express.js version">
-  </a>
-  <a href="#">
     <img src="https://img.shields.io/badge/react--native-0.59.9-green.svg?style=flat-square" alt="react-native version">
   </a>
   <a href="#">
