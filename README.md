@@ -1,4 +1,4 @@
-<h1 align="center">Awesome Notes - Full-Stack</h1>
+<h1 align="center">Awesome Notes - React Native & Redux</h1>
 
 <div align="center">
   <a href="#">
